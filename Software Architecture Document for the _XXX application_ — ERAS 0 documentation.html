@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Software Architecture Document for the &lt;XXX application&gt; &mdash; ERAS 0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://media.readthedocs.org/css/badge_only.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/underscore.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/doctools.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/readthedocs-doc-embed.js"></script>
+    <link rel="top" title="ERAS 0 documentation" href="../../index.html" />
+    <link rel="up" title="Templates" href="templates.html" />
+    <link rel="next" title="&lt;Application&gt; Software User and Maintenance Manual" href="swum-template.html" />
+    <link rel="prev" title="Templates" href="templates.html" /> 
+  
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://eras.readthedocs.io/en/latest/doc/templates/sad-template.html" />
+
+<link rel="stylesheet" href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="text/javascript" src="../../_static/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'doc/templates/sad-template'
+</script>
+
+<script type="text/javascript" src="../../_static/readthedocs-dynamic-include.js"></script>
+
+<!-- end RTD <extrahead> --></head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="swum-template.html" title="&lt;Application&gt; Software User and Maintenance Manual"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="templates.html" title="Templates"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">ERAS 0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="templates.html" accesskey="U">Templates</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="software-architecture-document-for-the-xxx-application">
+<h1>Software Architecture Document for the &lt;XXX application&gt;<a class="headerlink" href="#software-architecture-document-for-the-xxx-application" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Name Surname</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="change-record">
+<h2>Change Record<a class="headerlink" href="#change-record" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h3>
+<p>The Software Architecture Document (SAD) contains the description of the system in terms of its various architectural views, in order to highlight the different aspects of it.</p>
+<p>The description makes use of the well-known 4+1 view model.</p>
+<img alt="../../_images/fourplusone.jpg" src="../../_images/fourplusone.jpg" />
+</div>
+<div class="section" id="scope">
+<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h3>
+<p>Describes the scope of this requirements specification.</p>
+</div>
+<div class="section" id="applicable-documents">
+<h3>Applicable Documents<a class="headerlink" href="#applicable-documents" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="reference-documents">
+<h3>Reference Documents<a class="headerlink" href="#reference-documents" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="glossary">
+<h3>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<p>Make an overview in which you describe the rest of this document the and which chapter is primarily of interest for which reader.</p>
+</div>
+</div>
+<div class="section" id="architectural-requirements">
+<h2>Architectural Requirements<a class="headerlink" href="#architectural-requirements" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the requirements which are important for developing the software architecture.</p>
+<div class="section" id="non-functional-requirements">
+<h3>Non-functional requirements<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Describe the architecturally relevant non-functional requirements, i.e. those which are important for developing the software architecture. Think of security, third-party products, system dependencies, distribution and reuse. Also environmental factors such as context, design, implementation strategy, team composition, development tools, use of legacy code may be addressed.
+Usually, the non-functional requirements are already in place and can be referenced here. Provide a reference per requirement, and where the requirement is addressed.</p>
+</div>
+<div class="section" id="use-case-view-functional-requirements">
+<h3>Use Case View (functional requirements)<a class="headerlink" href="#use-case-view-functional-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Refer to Use Cases or Use Case scenarios which are relevant with respect to the software architecture. The Use Cases referred to should contain central functionality, many architectural elements or specific delicate parts of the architecture. A Use Case template is available in Appendix A. If UML Use-Case notation is used in capturing the requirements, these models can be inserted and described in this section</p>
+</div>
+</div>
+<div class="section" id="interface-requirements">
+<h2>Interface Requirements<a class="headerlink" href="#interface-requirements" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how the software interfaces with other software products
+or users for input or output. Examples of such interfaces include library
+routines, token streams, shared memory, data streams, and so forth.</p>
+<div class="section" id="user-interfaces">
+<h3>User Interfaces<a class="headerlink" href="#user-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>Describes how this product interfaces with the user.</p>
+<div class="section" id="gui-graphical-user-interface">
+<h4>GUI (Graphical User Interface)<a class="headerlink" href="#gui-graphical-user-interface" title="Permalink to this headline">¶</a></h4>
+<p>Describes the graphical user interface if present. This section should include
+a set of screen dumps or mockups to illustrate user interface features.
+If the system is menu-driven, a description of all menus and their components
+should be provided.</p>
+</div>
+<div class="section" id="cli-command-line-interface">
+<h4>CLI (Command Line Interface)<a class="headerlink" href="#cli-command-line-interface" title="Permalink to this headline">¶</a></h4>
+<p>Describes the command-line interface if present. For each command, a
+description of all arguments and example values and invocations should be
+provided.</p>
+</div>
+<div class="section" id="api-application-programming-interface">
+<h4>API (Application Programming Interface)<a class="headerlink" href="#api-application-programming-interface" title="Permalink to this headline">¶</a></h4>
+<p>Describes the application programming interface, if present. Foreach public
+interface function, the name, arguments, return values, examples of invocation,
+and interactions with other functions should be provided. If this package is a
+library, the functions that the library provides should be described here
+together with the parameters.</p>
+</div>
+</div>
+<div class="section" id="hardware-interfaces">
+<h3>Hardware Interfaces<a class="headerlink" href="#hardware-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>A high level description (from a software point of view) of the hardware
+interface if one exists. This section can refer to an ICD (Interface Control
+Document) that will contain the detail description of this interface.</p>
+</div>
+<div class="section" id="software-interfaces">
+<h3>Software Interfaces<a class="headerlink" href="#software-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>A high level description (from a software point of view) of the software
+interface if one exists. This section can refer to an ICD (Interface Control
+Document) that will contain the detail description of this interface.</p>
+</div>
+<div class="section" id="communication-interfaces">
+<h3>Communication Interfaces<a class="headerlink" href="#communication-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>Describe any communication interfaces that will be required.</p>
+</div>
+</div>
+<div class="section" id="performance-requirements">
+<h2>Performance Requirements<a class="headerlink" href="#performance-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Specifies speed and memory requirements.</p>
+</div>
+<div class="section" id="logical-view">
+<h2>Logical View<a class="headerlink" href="#logical-view" title="Permalink to this headline">¶</a></h2>
+<p>Describe the architecturally significant logical structure of the system. Think of decomposition in terms of layers and subsystems. Also describe the way in which, in view of the decomposition, Use Cases are technically translated into Use Case Realizations</p>
+<div class="section" id="layers">
+<h3>Layers<a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h3>
+<p>The ERAS software applicationg belong to the heterogeneous Distributed Control System (DCS) domain  which can be represented as a layered architecture. This is a very common design pattern used when developing systems that consist of many components across multiple levels of abstraction as in ERAS case. Normally, you should be developing components that belong to the Application layer</p>
+<img alt="../../_images/layered.jpg" src="../../_images/layered.jpg" />
+</div>
+<div class="section" id="subsystems">
+<h3>Subsystems<a class="headerlink" href="#subsystems" title="Permalink to this headline">¶</a></h3>
+<p>Describe the decomposition of the system in subsystems and show their relation.</p>
+</div>
+<div class="section" id="use-case-realizations">
+<h3>Use Case Realizations<a class="headerlink" href="#use-case-realizations" title="Permalink to this headline">¶</a></h3>
+<p>Give examples of the way in which the Use Case Specifications are technically translated into Use Case Realizations, for example, by providing a sequence-diagram.</p>
+</div>
+</div>
+<div class="section" id="implementation-view">
+<h2>Implementation View<a class="headerlink" href="#implementation-view" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the technical implementation of the logical view.</p>
+</div>
+<div class="section" id="deployment-view">
+<h2>Deployment View<a class="headerlink" href="#deployment-view" title="Permalink to this headline">¶</a></h2>
+<p>Describe the physical network and hardware configurations on which the software will be deployed. This includes at least the various physical nodes (computers, CPUs), the interaction between (sub)systems and the connections between these nodes (bus, LAN, point-to-point, messaging, etc.). Use a deployment diagram.</p>
+</div>
+<div class="section" id="development-and-test-factors">
+<h2>Development and Test Factors<a class="headerlink" href="#development-and-test-factors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hardware-limitations">
+<h3>Hardware Limitations<a class="headerlink" href="#hardware-limitations" title="Permalink to this headline">¶</a></h3>
+<p>Describe any hardware limitations if any exist.</p>
+</div>
+<div class="section" id="software-validation-and-verification">
+<h3>Software validation and verification<a class="headerlink" href="#software-validation-and-verification" title="Permalink to this headline">¶</a></h3>
+<p>Give a detail requirements plan for the how the software will be tested and
+verified.</p>
+</div>
+<div class="section" id="planning">
+<h3>Planning<a class="headerlink" href="#planning" title="Permalink to this headline">¶</a></h3>
+<p>Describe the planning of the whole process mentioning major milestones and
+deliverables at these milestones.</p>
+</div>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="appendix-a-use-case-template">
+<h2>Appendix A: Use Case template<a class="headerlink" href="#appendix-a-use-case-template" title="Permalink to this headline">¶</a></h2>
+<p>Use Cases drive the whole software process and bind together all the phases
+from requirements capture to final delivery of the system and maintenance.
+They are a very effective way of communicating with customers and among team
+members. Before every discussion always provide the partners with a set of
+relevant Use Cases.</p>
+<p>During meetings, they stimulate focused discussions and help identifying
+important details. It is important to keep in mind that Use Cases have to
+describe WHAT the system has to do in response to certain external stimuli
+and NOT HOW it will do it. The HOW is part of the architecture and of the
+design.</p>
+<p>What follows is the empty template:</p>
+</div>
+<div class="section" id="use-case-name">
+<h2>Use Case: &lt;Name&gt;<a class="headerlink" href="#use-case-name" title="Permalink to this headline">¶</a></h2>
+<p>&lt;Short description&gt;</p>
+<div class="section" id="actors">
+<h3>Actors<a class="headerlink" href="#actors" title="Permalink to this headline">¶</a></h3>
+<p>&lt;List of Actors&gt;</p>
+</div>
+<div class="section" id="priority">
+<h3>Priority<a class="headerlink" href="#priority" title="Permalink to this headline">¶</a></h3>
+<p>&lt;Low, Normal, Critical&gt;</p>
+</div>
+<div class="section" id="preconditions">
+<h3>Preconditions<a class="headerlink" href="#preconditions" title="Permalink to this headline">¶</a></h3>
+<p>&lt;List of preconditions that must be fulfilled&gt;</p>
+</div>
+<div class="section" id="basic-course">
+<h3>Basic Course<a class="headerlink" href="#basic-course" title="Permalink to this headline">¶</a></h3>
+<p>&lt;Step-by-step description of the basic course&gt;</p>
+</div>
+<div class="section" id="alternate-course">
+<h3>Alternate Course<a class="headerlink" href="#alternate-course" title="Permalink to this headline">¶</a></h3>
+<p>&lt;Step-by-step description of the alternate course&gt;</p>
+</div>
+<div class="section" id="exception-course">
+<h3>Exception Course<a class="headerlink" href="#exception-course" title="Permalink to this headline">¶</a></h3>
+<p>&lt;Step-by-step description of the exception course&gt;</p>
+</div>
+<div class="section" id="postconditions">
+<h3>Postconditions<a class="headerlink" href="#postconditions" title="Permalink to this headline">¶</a></h3>
+<p>&lt;List of postconditions (if apply)&gt;</p>
+</div>
+<div class="section" id="id1">
+<h3>Notes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Software Architecture Document for the &lt;XXX application&gt;</a><ul>
+<li><a class="reference internal" href="#change-record">Change Record</a></li>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#purpose">Purpose</a></li>
+<li><a class="reference internal" href="#scope">Scope</a></li>
+<li><a class="reference internal" href="#applicable-documents">Applicable Documents</a></li>
+<li><a class="reference internal" href="#reference-documents">Reference Documents</a></li>
+<li><a class="reference internal" href="#glossary">Glossary</a></li>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#architectural-requirements">Architectural Requirements</a><ul>
+<li><a class="reference internal" href="#non-functional-requirements">Non-functional requirements</a></li>
+<li><a class="reference internal" href="#use-case-view-functional-requirements">Use Case View (functional requirements)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interface-requirements">Interface Requirements</a><ul>
+<li><a class="reference internal" href="#user-interfaces">User Interfaces</a><ul>
+<li><a class="reference internal" href="#gui-graphical-user-interface">GUI (Graphical User Interface)</a></li>
+<li><a class="reference internal" href="#cli-command-line-interface">CLI (Command Line Interface)</a></li>
+<li><a class="reference internal" href="#api-application-programming-interface">API (Application Programming Interface)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hardware-interfaces">Hardware Interfaces</a></li>
+<li><a class="reference internal" href="#software-interfaces">Software Interfaces</a></li>
+<li><a class="reference internal" href="#communication-interfaces">Communication Interfaces</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#performance-requirements">Performance Requirements</a></li>
+<li><a class="reference internal" href="#logical-view">Logical View</a><ul>
+<li><a class="reference internal" href="#layers">Layers</a></li>
+<li><a class="reference internal" href="#subsystems">Subsystems</a></li>
+<li><a class="reference internal" href="#use-case-realizations">Use Case Realizations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#implementation-view">Implementation View</a></li>
+<li><a class="reference internal" href="#deployment-view">Deployment View</a></li>
+<li><a class="reference internal" href="#development-and-test-factors">Development and Test Factors</a><ul>
+<li><a class="reference internal" href="#hardware-limitations">Hardware Limitations</a></li>
+<li><a class="reference internal" href="#software-validation-and-verification">Software validation and verification</a></li>
+<li><a class="reference internal" href="#planning">Planning</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#notes">Notes</a></li>
+<li><a class="reference internal" href="#appendix-a-use-case-template">Appendix A: Use Case template</a></li>
+<li><a class="reference internal" href="#use-case-name">Use Case: &lt;Name&gt;</a><ul>
+<li><a class="reference internal" href="#actors">Actors</a></li>
+<li><a class="reference internal" href="#priority">Priority</a></li>
+<li><a class="reference internal" href="#preconditions">Preconditions</a></li>
+<li><a class="reference internal" href="#basic-course">Basic Course</a></li>
+<li><a class="reference internal" href="#alternate-course">Alternate Course</a></li>
+<li><a class="reference internal" href="#exception-course">Exception Course</a></li>
+<li><a class="reference internal" href="#postconditions">Postconditions</a></li>
+<li><a class="reference internal" href="#id1">Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="templates.html"
+                        title="previous chapter">Templates</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="swum-template.html"
+                        title="next chapter">&lt;Application&gt; Software User and Maintenance Manual</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/doc/templates/sad-template.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="swum-template.html" title="&lt;Application&gt; Software User and Maintenance Manual"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="templates.html" title="Templates"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">ERAS 0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="templates.html" >Templates</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2013, IMS.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.5.
+    </div>
+  </body>
+</html>
