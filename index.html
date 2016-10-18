@@ -1,118 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Documento de Arquitectura de Software</title>
-<link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
-<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
-        type="text/css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/prettify.css">
-</head>
-<body>
-<div class="wrapper">
-<nav>
- 
-</nav>
-<header>
-    <div class="container">
-        <h2 class="lone-header">Docuemento de Arquitectura de Software para la Aplicación<strong> Web Delivery</strong></h2>
-    </div>
-</header>
-  
-<section>
-  <div class="container">
-    <ul class="docs-nav">
-      <li><strong>Introducción</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><a href="#propouse" class="cc-active">Proposito</a></li>
-      <li><a href="#scope" class="cc-active">Alcance</a></li>
-      <li><a href="#dAplicables" class="cc-active">Documentos Aplicables</a></li>
-      <li><a href="#dReferencia" class="cc-active">Documentos de Referencia</a></li>
-      <li><a href="#glosary" class="cc-active">Glosario</a></li>
-      <li><a href="#overview" class="cc-active">Resumen</a></li>
-      <li class="separator"></li>
-      <li><strong>Req. de Arquitectura</strong></li>
-      <li><a href="#intro" class="cc-active">Req. No Funcionales</a></li>
-      <li><a href="#intro" class="cc-active">Req. Funcionales</a></li>
-        
-      <li><strong>Req. de Interface</strong></li>
-      <li><a href="#intro" class="cc-active">Interfaces de Usuario</a></li>
-      <li><a href="#intro" class="cc-active">GUI</a></li>
-      <li><a href="#intro" class="cc-active">CLI</a></li>
-      <li><a href="#intro" class="cc-active">API</a></li>
-      <li><a href="#intro" class="cc-active">Interfaz de Hardware</a></li>
-      <li><a href="#intro" class="cc-active">Interfaz de Software</a></li>
-      <li><a href="#intro" class="cc-active">Interfaz de Comunicación</a></li>
-         
-       
-               
-      <li><strong>Req. de Rendimiento</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Vista Logica</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Vista de Implementación</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Vista de Despliegue</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Factores de Test y Desarrollo</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Notas</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Apendice: Template Casos de Uso</strong></li>
-      <li><a href="#intro" class="cc-active">Introducción</a></li>
-      <li><strong>Casos de USo</strong></li>
-      <li><a href="#reg_changes" class="cc-active">Registro de Cambios</a></li>
-        
-    </ul>
-    
-      
-      <div class="docs-content">
-      <h4> Autores: Francisco Escobar Jara - Henry Villagra Molina</h4>
-    
-      <h3 id="welcome"> Introducción</h3>
-      <p> Are you listening to your customers?</p>
-          
-      <h3 id="benefits"> Benefits</h3>
-    
-      <h3 id="features"> Features</h3>
-    
-      <h3 id="license"> License</h3>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Documento de Arquitectura de Software</title>
+        <link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+              type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prettify.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
 
-      <h3 id="view_type"> View Type</h3>
-      
-      <h3 id="animation_style"> Animation Style</h3>
-     
-      <h3 id="bars_text"> Bars Text</h3>
-     
-      <h3 id="vote_counter"> Vote Counter</h3>
-     
-      <h3 id="rating_icons"> Rating Icons</h3>
-     
-      <h3 id="bar_colors"> Bar Colors</h3>
-    
-     <h3 id="reg_changes"> Registro de Cambios</h3>
-      <ul>
-        <li>16/10/2016 - Generación de Template</li>
-        <li>16/10/2016 - Añadir Partes Elementos Basicos</li>
-        <li>18/10/2016 - </li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="vibrant centered">
-  <div class="">
-    <h4> Este documento de arquitectura esta basado en el <a href="/HP_arch_template_vers13_withexamples.pdf" target="_blank">Template HP</a> para la  documentación de arquitecturas de software y firmware.</h4>
-  </div>
-</section>
-</div>
-<script src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="js/prettify/prettify.js"></script> 
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
-<script src="js/layout.js"></script>
-</body>
+            </nav>
+            <header>
+                <div class="container">
+                    <h2 class="lone-header">Docuemento de Arquitectura de Software para la Aplicación<strong> Web Delivery</strong></h2>
+                </div>
+            </header>
+
+            <section>
+                <div class="container">
+                    <ul class="docs-nav">
+                        <li><a href="#intro" class="cc-active"><strong>Introducción</strong></a></li>
+                        <li><a href="#propouse" class="cc-active">Proposito</a></li>
+                        <li><a href="#scope" class="cc-active">Alcance</a></li>
+                        <li><a href="#dAplicables" class="cc-active">Documentos Aplicables</a></li>
+                        <li><a href="#dReferencia" class="cc-active">Documentos de Referencia</a></li>
+                        <li><a href="#glosary" class="cc-active">Glosario</a></li>
+                        <li><a href="#overview" class="cc-active">Resumen</a></li>
+                        <li class="separator"></li>
+
+                        <li><a href="#RA" class="cc-active"><strong>Req. de Arquitectura</strong></a></li>
+                        <li><a href="#RnF" class="cc-active">Req. No Funcionales</a></li>
+                        <li><a href="#RF" class="cc-active">Req. Funcionales</a></li>
+                        <li class="separator"></li>
+
+                        <li><a href="#RI" class="cc-active"><strong>Req. de Interfaces</strong></a></li>
+                        <li><a href="#UI" class="cc-active">Interfaces de Usuario</a></li>
+                        <li><a href="#GUI" class="cc-active">GUI</a></li>
+                        <li><a href="#CLI" class="cc-active">CLI</a></li>
+                        <li><a href="#API" class="cc-active">API</a></li>
+                        <li><a href="#IH" class="cc-active">Interfaz de Hardware</a></li>
+                        <li><a href="#IS" class="cc-active">Interfaz de Software</a></li>
+                        <li><a href="#IC" class="cc-active">Interfaz de Comunicación</a></li>
+                        <li class="separator"></li>
+
+                        <li><a href="#RR" class="cc-active"><strong>Req. de Rendimiento</strong></a></li>
+                        <li class="separator"></li>
+                        
+                        <li><a href="#VL" class="cc-active"><strong>Vista Logica</strong></a></li>
+                        <li><a href="#layers" class="cc-active">Capas</a></li>
+                        <li><a href="#subS" class="cc-active">Sub-Sistemas</a></li>
+                        <li><a href="#rCasoUso" class="cc-active">Realizacion de Casos de Uso</a></li>
+                        <li class="separator"></li>
+                        
+                        
+                        <li><a href="#VI" class="cc-active"><strong>Vista de Implementación</strong></a></li>
+                        <li class="separator"></li>
+                        
+                        <li><a href="#VD" class="cc-active"><strong>Vista de Despliegue</strong></a></li>
+                        <li class="separator"></li>
+                        
+                        <li><a href="#FTD" class="cc-active"><strong>Factores de Test y Desarrollo</strong></a></li>
+                        <li><a href="#LH" class="cc-active">Limitaciones de Hardware</a></li>
+                        <li><a href="#VVS" class="cc-active">Validaciónes y verificaciones de Software</a></li>
+                        <li><a href="#plan" class="cc-active">Planeación</a></li>
+                        <li class="separator"></li>
+                        
+                        <li><a href="#note" class="cc-active"><strong>Notas</strong></a></li>
+                        <li class="separator"></li>
+                        
+                        <li><a href="#UC" class="cc-active"><strong>Casos de Uso</strong></a></li>
+                        <li class="separator"></li>
+                        
+                    </ul>
+
+
+                    <div class="docs-content">
+                        <h4> Autores: Francisco Escobar Jara - Henry Villagra Molina</h4>
+
+                        <h3 id="intro"> Introducción</h3>
+                        <h3 id="propouse"> Proposito</h3>
+                        <h3 id="scope"> Alcance</h3>
+                        <h3 id="dAplicables"> Documentos Aplicables</h3>
+                        <h3 id="dReferencia"> Documentos de Referencia</h3>
+                        <h3 id="glosary"> Glosario</h3>
+                        <h3 id="overview"> Resumen</h3>
+                        
+                        <h3 id="RA"> Reuqrimientos</h3>
+                        <h3 id="RnF"> Vote Counter</h3>
+                        <h3 id="RF"> Rating Icons</h3>
+                        
+                        <h3 id="RI"> Bar Colors</h3>
+                        <h3 id="UI"> Registro de Cambios</h3>
+                        <h3 id="GUI"> Registro de Cambios</h3>
+                        <h3 id="CLI"> Registro de Cambios</h3>
+                        <h3 id="API"> Registro de Cambios</h3>
+                        <h3 id="IH"> Registro de Cambios</h3>
+                        <h3 id="IS"> Registro de Cambios</h3>
+                        <h3 id="IC"> Registro de Cambios</h3>
+                        
+                        <h3 id="RR"> Registro de Cambios</h3>
+                        
+                        <h3 id="VL"> Registro de Cambios</h3>
+                        <h3 id="layers"> Registro de Cambios</h3>
+                        <h3 id="subS"> Registro de Cambios</h3>
+                        <h3 id="rCasoUso"> Registro de Cambios</h3>
+                        
+                        <h3 id="VI"> Registro de Cambios</h3>
+                        
+                        <h3 id="VD"> Registro de Cambios</h3>
+                        
+                        <h3 id="FTD"> Registro de Cambios</h3>
+                        
+                        <h3 id="LH"> Registro de Cambios</h3>
+                        
+                        <h3 id="plan"> Registro de Cambios</h3>
+                        
+                        <h3 id="note"> Registro de Cambios</h3>
+                        
+                        <h3 id="UC"> Registro de Cambios</h3>
+                       
+                        
+                        <ul>
+                            <li>16/10/2016 - Generación de Template</li>
+                            <li>16/10/2016 - Añadir Partes Elementos Basicos</li>
+                            <li>18/10/2016 - </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="vibrant centered">
+                <div class="">
+                    <h4> Este documento de arquitectura esta basado en el <a href="/HP_arch_template_vers13_withexamples.pdf" target="_blank">Template HP</a> para la  documentación de arquitecturas de software y firmware.</h4>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/prettify/prettify.js"></script> 
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+        <script src="js/layout.js"></script>
+    </body>
 </html>
